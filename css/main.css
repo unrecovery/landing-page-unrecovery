@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;0,800;1,300&display=swap');
+
+
+*{
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/*parte de navegacion*/
+nav{
+position: fixed;
+top: 20px;
+left: 20px;
+
+}
+
+nav a
+{
+  text-decoration: none;
+  display: inline-block;
+  animation: moveRight 1s ease-in;
+}
+
+header{
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: auto;
+  padding: 48px;
+  width: 100%;
+}
+.container{
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  margin: center;
+
+
+}
+img{
+  display: block;
+  height: 450px;
+  object-fit: cover;
+  width: auto;
+   animation: moveUp 1s ease-in;
+}
+
+.main-content{
+width: 50%;
+}
+
+.main-content h1{
+  font-size: 70px;
+   animation: moveRight 1s ease-in;
+}
+.main-content h2{
+  font-size: 25px;
+   animation: moveLeft 1s ease-in;
+}
+.main-content h3{
+font-size: 15px;
+animation: moveRight 1s ease-in;
+}
+
+.main-content a{
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  margin-top: 30px;
+  border: 1px solid white;
+  width: 150px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px 0;
+   animation: moveUp 1s ease-in;
+}
+
+.wave{
+height: 100px;
+width: 100%;
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*animation*/
+@keyframes moveLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
