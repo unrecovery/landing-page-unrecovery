@@ -186,8 +186,12 @@ transition: all 1s ease;
 }
 
 @media screen and (max-width:450px){
+  img{
+    margin-left: 200px;
+  }
     .container{
-      width: 100%;
+
+      width: 30%;
       flex-wrap: wrap-reverse;
       justify-content: center;
     }
@@ -202,16 +206,17 @@ transition: all 1s ease;
       font-size: 25px;
     }
     .main-content h3{
-      font-size: 13px;
+      font-size: 15px;
     }
 }
 
 @media screen and (max-width:340px){
   img{
-    height: 150px;
+    margin-left: 160px;
+    height: 200px;
   }
   .container{
-      width: 100%;
+      width: 30%;
       flex-wrap: wrap-reverse;
       justify-content: center;
     }
